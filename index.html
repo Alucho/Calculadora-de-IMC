@@ -9,7 +9,21 @@
 </head>
 
 <body>
-  <p>Teste</p>
+  <form id="formulario">
+    
+    <label for="altura">Altura:</label>
+    <input name="altura" type="text">
+    
+    <label for="peso">Peso:</label>
+    <input name="peso" type="text">
+
+    <label for="imc">IMC</label>
+    <input name="imc" type="text" disabled="" />
+
+    <button onclick="calcular();">Calcular</button>
+    
+  </form>
+  
   <script src="script.js"></script>
 </body>
 

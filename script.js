@@ -1,33 +1,32 @@
-function calcular(){
 
-  let formulario = document.getElementById("formulario");
+function calcular(){
 
   let altura = +formulario.altura.value;
   let peso = +formulario.peso.value;
   let imc = peso / (altura ** 2);
 
-  formulario.imc.value = imc.toFixed(2);
-
   if(imc < 20){
-    alert('Abaixo do peso!');
+    resultado = ("Abaixo do peso!");
   } 
   else if(imc >20 && imc <= 25){
-    alert("Peso Ideal");
+    resultado = ("Peso Ideal");
   }
   else if(imc >25 && imc <= 30){
-    alert("Sobrepeso");
+    resultado = ("Sobrepeso");
   }
   else if(imc >30 && imc <= 35){
-    alert("Obesidade Moderada");
+    resultado = ("Obesidade Moderada");
   }
   else if(imc >35 && imc <= 40){
-    alert("Obesidade Severa");
+    resultado = ("Obesidade Severa");
   }
   else if(imc >40 && imc <= 50){
-    alert("Obesidade Morbida");
+    resultado = ("Obesidade Morbida");
   }
   else{
-   alert('Gordo');
+   resultado = ('Falha de cálculo!');
   }
 
+  formulario.imc.value = imc.toFixed(2)
+  
 }

@@ -1,3 +1,70 @@
-.wow {
-  width: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+html{
+  font-family: 'Lato', sans-serif;
 }
+
+header{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font: 1em lato;
+  background: #ababab
+}
+
+form{
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 90%;
+  padding: 1em;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  color: #000000
+  backgroun
+}
+
+
+input{
+  border: solid;
+  border-radius: 50px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+label {
+  display: flex;
+  width: 90px;
+  text-align: center;
+}
+
+
+.btn {
+  margin-top: 1em;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6e6e6e;
+  color: #000;
+}
+
+
+footer{
+  margin-top: 1em;
+  background: #ababab;
+}
+
+/*
+.btn{
+  color: #edf109;
+  background: #017433
+}
+
+form{
+  background: #f20202
+}
+*/

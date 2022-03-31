@@ -4,27 +4,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Calculadora de IMC</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
 </head>
 
-<body>
-  <form id="formulario">
-    
-    <label for="altura">Altura:</label>
-    <input name="altura" type="text">
-    
-    <label for="peso">Peso:</label>
-    <input name="peso" type="text">
+<body background="">
 
-    <label for="imc">IMC</label>
-    <input name="imc" type="text" disabled="" />
-
-    <button onclick="calcular();">Calcular</button>
-    
-  </form>
+<header>Calculadora de IMC</header>
   
-  <script src="script.js"></script>
+  <div class="formulario">
+    <form id="formulario">
+      
+      <label for="altura">Altura:</label>
+      <input name="altura" type="text">
+      
+      <label for="peso">Peso:</label>
+      <input name="peso" type="text">
+  
+      <label for="imc">IMC:</label>
+      <input name="imc" id=imc type="text" disabled="" />
+  
+      <button type="button" class="btn" onclick="calcular();">Calcular</button>
+      
+    </form>
+  
+  <footer>Footer Test</footer>
 </body>
 
 </html>
